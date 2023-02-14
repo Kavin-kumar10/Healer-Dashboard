@@ -1,0 +1,21 @@
+.App{
+  height: 100vh;
+  width: 100vw;
+}
+
+:root{
+  --primary-color:rgb(19, 19, 26);
+  --secondary-color:black;
+  --tertiary-color:rgb(74, 11, 156);
+  --primary-bright:white;
+}
+
+
+// bright mode
+
+// :root{
+//     --primary-color:white;
+//     --secondary-color:rgb(78, 106, 158);
+//     --tertiary-color:rgb(74, 11, 156);
+//     --primary-bright:black;
+//   }
