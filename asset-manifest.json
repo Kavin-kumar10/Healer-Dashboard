@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Healer-Dashboard/static/css/main.027f4575.css",
+    "main.js": "/Healer-Dashboard/static/js/main.e9df21f3.js",
+    "index.html": "/Healer-Dashboard/index.html",
+    "main.027f4575.css.map": "/Healer-Dashboard/static/css/main.027f4575.css.map",
+    "main.e9df21f3.js.map": "/Healer-Dashboard/static/js/main.e9df21f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.027f4575.css",
+    "static/js/main.e9df21f3.js"
+  ]
+}
