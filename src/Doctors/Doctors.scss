@@ -1,0 +1,36 @@
+.Doctors{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    background:var(--primary-color);
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 200px 1fr;
+    grid-template-areas:
+        'sidebar headDoc'
+        'sidebar body';
+}
+.Doctors>*{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px var(--secondary-color);
+}
+.body{
+    grid-area: body;
+    background-color:var(--tertiary-color);
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    overflow-y:auto;
+}
+.body::-webkit-scrollbar{
+    display: none;
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color:var(--primary-color);
+}
+.headDoc{
+    grid-area: headDoc;
+    background-color:var(--primary-color);
+}

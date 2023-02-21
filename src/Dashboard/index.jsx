@@ -1,7 +1,7 @@
 import React from "react";
 import './Dashboard.scss';
 import Header from './Components/Header'
-import Sidebar from "./Components/Sidebar";
+import Sidebar from "../Sidebar";
 import Main from './Components/Main';
 import Footer from "./Components/Footer";
 import SubBar from "./Components/SubBar";

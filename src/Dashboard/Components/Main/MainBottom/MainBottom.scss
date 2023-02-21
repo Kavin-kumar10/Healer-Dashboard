@@ -1,0 +1,48 @@
+.MainBottom{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 200px 200px;
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+    'left right_TL right_TR'
+    'left right_BL  right_BR';
+    .left{
+        grid-area: left;
+        border-radius: 12px;
+        padding:20px;
+        background-color: var(--primary-color);
+        margin: 12px;
+    }
+    .right_TL{
+        grid-area: right_TL;
+        border-radius: 12px;
+        background-color:var(--primary-color);
+        box-shadow: 0px 0px 10px var(--secondary-color);
+        margin: 12px;
+    }
+    .right_TR{
+        grid-area: right_TR;
+        border-radius: 12px;
+        background-color:var(--primary-color);
+        box-shadow: 0px 0px 10px var(--secondary-color);
+        margin: 12px;
+
+    }
+    .right_BR{
+        grid-area: right_BL;
+        border-radius: 12px;
+        background-color:var(--primary-color);
+        box-shadow: 0px 0px 10px var(--secondary-color);
+
+        margin: 12px;
+
+    }
+    .right_BL{
+        grid-area: right_BR;
+        border-radius: 12px;
+        background-color:var(--primary-color);
+        box-shadow: 0px 0px 10px var(--secondary-color);
+        margin: 12px;
+    }
+}
