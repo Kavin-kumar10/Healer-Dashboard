@@ -15,7 +15,6 @@
         'sidebar bodyLeave'
         'sidebar bodyLeave';
 
-
         .bodyLeave{
             grid-area: bodyLeave;
             display: flex;
@@ -27,6 +26,7 @@
                 z-index: 1;
                 h2{
                     color: var(--secondary-color);
+                    margin: 12px;
                 }
             }
             .LeaveMain{

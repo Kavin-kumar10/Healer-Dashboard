@@ -24,7 +24,7 @@ const Leave = () =>{
                             <Accordion.Item eventKey={index} style={{margin:"40px 0px"}}>
                             <Accordion.Header>
                                 <div className="Acc__head">
-                                    <p>{User.name.title} {User.name.first} {User.name.last}</p>
+                                    <p>{User.name}</p>
                                     <div className="btn">
                                         <div className="btn__acc">Accept</div>
                                         <div className="btn__dec">Decline</div>

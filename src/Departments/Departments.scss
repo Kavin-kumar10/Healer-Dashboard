@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.Departments {
+    display: grid;
+    color:var(--primary-bright);
+    background: var(--primary-color);
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    grid-template-columns: 300px 1fr 1fr 1fr;
+    grid-template-rows: 1fr 300px;
+    grid-template-areas:
+        'sidebar dept5 dept5 dept1'
+        'sidebar dept2 dept3 dept4';
+    .dept{
+        opacity: 0.7;
+        cursor:pointer;
+        &:hover{
+            opacity:1;
+            transition: all 0.2s linear;
+        }
+    }    
+    .dept1{
+        grid-area: dept1;
+        background: url('https://p4.wallpaperbetter.com/wallpaper/245/614/545/brushing-teeth-catching-teeth-dental-instruments-dental-intervention-wallpaper-preview.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .dept1_desc{
+            h1{
+                color: var(--primary-color);
+            }
+        }
+    } 
+    .dept2{
+        grid-area: dept2;
+        background: url('https://p4.wallpaperbetter.com/wallpaper/934/209/313/heart-medicine-human-organ-wallpaper-preview.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        .dept2_desc{
+            h1{
+                color: var(--primary-color);
+                opacity: 1;
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 20px;
+            }
+        }
+    }
+    .dept3{
+        grid-area: dept3;
+        background: url('https://walgreens.foreyes.com/media/blog/What_Causes_Darkened_Vision_header.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        .dept3_desc{
+            h1{
+                color: var(--primary-color);
+            }
+        }
+    }
+    .dept4{
+        grid-area: dept4;
+        background: url('https://www.cptrehab.net/wp-content/uploads/2021/05/CPT-1206802082.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        .dept4_desc{
+            h1{
+                color: var(--primary-color);
+            }
+        }
+    }
+    .dept5{
+        position: relative;
+        grid-area: dept5;
+        background: url('https://cdn.wallpapersafari.com/23/51/xU2F8s.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 0px;
+        .dept5_desc{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 12px;
+            h1{
+                font-size: 70px;
+                color: var(--primary-color);
+            }
+        }
+    }   
+}
+
+
+.Departments>*{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px var(--secondary-color);
+}

@@ -5,10 +5,13 @@ export const ListContext = createContext();
 
 export const ListProvider = (props) =>{
     const [Users,setUsers] = useState([])
+    const [isLoading,setIsloading] = useState(true);
     useEffect(()=>{
-        axios.get('https://randomuser.me/api/?results=300')
+        axios.get('http://localhost:5000/api/get')
         .then((response)=>{
-            setUsers(response.data.results);
+            setUsers(response.data);
+            setIsloading(false);
+            console.log(response.data);
         })
         .catch((err)=>{
             console.log(err);
@@ -16,7 +19,7 @@ export const ListProvider = (props) =>{
     },[]); 
     return(
         <div>
-            <ListContext.Provider value={[Users,setUsers]}>
+            <ListContext.Provider value={[Users,setUsers,isLoading]}>
                 {props.children}
             </ListContext.Provider>
         </div>

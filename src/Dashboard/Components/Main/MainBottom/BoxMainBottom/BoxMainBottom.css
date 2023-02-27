@@ -1,0 +1,17 @@
+.BoxMainBottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px;
+}
+.BoxMainBottom #icon {
+  color: var(--tertiary-color-strong);
+}
+.BoxMainBottom p {
+  margin: 10px;
+}
+.BoxMainBottom h1 {
+  margin: 2px;
+  opacity: 0.7;
+}/*# sourceMappingURL=BoxMainBottom.css.map */

@@ -1,15 +1,12 @@
 import React from "react";
-import './header.scss';
+import "./Header.scss"
 
-const header = () =>{
+const Header = () =>{
     return(
-        <div className="header">
-            <input type="text" placeholder="Search.."/>
-            <div className="right">
-
-            </div>
+        <div className="Header">
+            <h2>Dashboard</h2>
         </div>
     )
 }
 
-export default header
+export default Header
