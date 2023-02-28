@@ -35,7 +35,7 @@ const MainBottom = () =>{
                 <BoxMainBottom val="200" head="Bed's Available" icon="Bed"/>
             </div>
             <div className="right_TR">
-                <BoxMainBottom val="1200" head="Stock" icon="Medicine"/>
+                <BoxMainBottom val="1200" head="Medical Stock" icon="Medicine"/>
             </div>
             <div className="right_BR">
                 <BoxMainBottom val="40" head="Emergency Case" icon="Emergency"/>
@@ -43,7 +43,6 @@ const MainBottom = () =>{
             <div className="right_BL">
                 <BoxMainBottom val="90" head="Out Patients" icon="Outpatients"/>
             </div>
-
         </div>
     )
 }

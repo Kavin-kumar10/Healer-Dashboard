@@ -16,12 +16,12 @@ const Leave = () =>{
                 <h2>Leave Request</h2>
             </div>
             <div className="LeaveMain">
-            <Accordion defaultActiveKey="0">
+            <Accordion defaultActiveKey="1">
             {
                 Users.map((User,index)=>{
                     return(
                         <div className="Acc">
-                            <Accordion.Item eventKey={index} style={{margin:"40px 0px"}}>
+                            <Accordion.Item eventKey="1" style={{margin:"40px 0px"}}>
                             <Accordion.Header>
                                 <div className="Acc__head">
                                     <p>{User.name}</p>

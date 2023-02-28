@@ -7,7 +7,7 @@ export const ListProvider = (props) =>{
     const [Users,setUsers] = useState([])
     const [isLoading,setIsloading] = useState(true);
     useEffect(()=>{
-        axios.get('http://localhost:5000/api/get')
+        axios.get('https://node-js-healer-dashboard.onrender.com/api/get')
         .then((response)=>{
             setUsers(response.data);
             setIsloading(false);

@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bg-MYVARIENT{
+    background-color:var(--tertiary-color-strong)!important;
+}
+
+
+.Maincat{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    .Chart{
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        background-color:var(--primary-color);
+        height:90%;
+        padding: 12px;
+        margin: 12px;
+        border-radius: 12px;
+        .content{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            padding: 12px;
+            .cat{
+                display: flex;
+                align-items:center;
+                width: 100%;
+                justify-content: space-between;
+                margin: 8px;
+                p{
+                    margin: 0px;
+                    padding: 0px;
+                    color: var(--primary-bright);
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+    .Chart>*{
+        height: 50px;
+        width: 50px;
+    }
+    .chat{
+        flex: 2;
+        height:90%;
+        padding: 12px;
+        margin: 12px;
+        border-radius: 12px;
+        background-color: var(--primary-color);
+    }
+}

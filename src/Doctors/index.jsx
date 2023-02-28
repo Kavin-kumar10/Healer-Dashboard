@@ -13,8 +13,13 @@ const Doctors = () =>{
         <div className="Doctors">
             <Sidebar/>
             <div className="headDoc">
-                <h2>Doctor's Database</h2>
-                <input type="text" placeholder="eg:- Oliva King / Ortho"/>
+                <div className="headDoc__1">
+                    <h2>Doctor's Database</h2>
+                    <input type="text" placeholder="eg:- Oliva King / Ortho"/>
+                </div>
+                <div className="headDoc__2">
+                    <button>New Doctor</button>
+                </div>
             </div>
             <div className="body">
                 {

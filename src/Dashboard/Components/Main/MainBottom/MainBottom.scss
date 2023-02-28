@@ -2,8 +2,8 @@
     display: grid;
     height: 100%;
     width: 100%;
-    grid-template-columns: 1fr 200px 200px;
-    grid-template-rows: 200px 200px;
+    grid-template-columns: 1fr 300px 300px;
+    grid-template-rows: 150px 150px;
     grid-template-areas:
     'left right_TL right_TR'
     'left right_BL  right_BR';
