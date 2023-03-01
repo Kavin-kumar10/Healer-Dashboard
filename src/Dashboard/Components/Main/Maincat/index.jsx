@@ -32,9 +32,9 @@ const Maincat = () =>{
             <div className="Chart">
                 <div className="content">
                   {
-                    cats.map((cat)=>{
+                    cats.map((cat,index)=>{
                       return(
-                        <div className="cat">
+                        <div className="cat" key={index}>
                             <p>{cat.type}</p>
                             <div id="progress">
                               <ProgressBar now={cat.val} style={{width:"200px"}} variant="MYVARIENT"/>

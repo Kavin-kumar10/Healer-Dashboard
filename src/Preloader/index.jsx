@@ -1,12 +1,16 @@
-import React from "react";
+import React,{useState} from "react";
 import './Preloader.scss';
 
 const Preloader = () =>{
+    const [message,setMessage] = useState('Loading...');
+    setTimeout(()=>{
+        setMessage('Taking longer than usual please check your internet connection...');
+    },6000);
     return(
         <div className="Preloader" id="preload">
-            {/* <h5>Please Wait</h5> */}
             <div className="circle">
             </div>
+            <p>{message}</p>
         </div>
     )
 }

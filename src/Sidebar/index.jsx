@@ -1,19 +1,40 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import './sidebar.scss';
 import logo from '../Assets/logo.png'
 import { Link,useLocation } from "react-router-dom";
 import {BsSun,BsMoon} from 'react-icons/bs'
 import {CiMedicalCross,CiStethoscope,CiBoxList,CiSettings,CiClock2,CiGrid41,CiTimer} from 'react-icons/ci';
 import {BsGraphUp} from 'react-icons/bs'
+import { set } from "mongoose";
 
 const Sidebar = () =>{
+    //Nav highlight process
     const location = useLocation();
     const currpath = location.pathname;
-    console.log(currpath);
+    // console.log(currpath);
     const styleForCurr = {
         background:`var(--tertiary-color)`,
         opacity:1
     }
+
+    //Bright and Dark mode
+    const [light,setLight] = useState();
+    useEffect(() => {
+        if(light == 0){
+            document.documentElement.style.setProperty('--primary-color','rgb(19, 19, 26)');
+            document.documentElement.style.setProperty('--secondary-color','black');
+            document.documentElement.style.setProperty('--tertiary-color','rgb(49, 185, 190)');
+            document.documentElement.style.setProperty('--primary-bright','white');
+        }
+        else if(light == 1){
+            document.documentElement.style.setProperty('--primary-color','white');
+            document.documentElement.style.setProperty('--secondary-color','rgb(131, 138, 151)');
+            document.documentElement.style.setProperty('--tertiary-color','rgba(119, 224, 189, 0.534)');
+            document.documentElement.style.setProperty('--primary-bright','black');
+        }
+    },[light]);
+
+
     return(
         <div className="sidebar">
             <div className="logo">
@@ -61,10 +82,10 @@ const Sidebar = () =>{
                 </Link>
             </div>
             <div className="modes">
-                <div className="mode">
+                <div className="mode" onClick={()=>{setLight(1)}}>
                     <BsSun id="icon"/>
                 </div>
-                <div className="mode">
+                <div className="mode" onClick={()=>{setLight(0)}}>
                     <BsMoon id="icon"/>
                 </div>
             </div>

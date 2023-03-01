@@ -8,8 +8,8 @@ const BoxMainBottom = (props) => {
     return(
         <div className="BoxMainBottom">
             <div className="contain">
-                {props.icon == "Bed"?(<MdOutlineBed size={80} id="icon"/>):props.icon == "Medicine" ? (<CiMedicalCase size={80} id="icon"/>):
-                props.icon == "Emergency"?(<TfiAlert size={80} id="icon"/>):(<CiUser size={80} id="icon"/>)}
+                {props.icon == "Bed"?(<MdOutlineBed size={70} id="icon"/>):props.icon == "Medicine" ? (<CiMedicalCase size={70} id="icon"/>):
+                props.icon == "Emergency"?(<TfiAlert size={70} id="icon"/>):(<CiUser size={70} id="icon"/>)}
             </div>
             <div className="detail">
                 <h1>{props.val}</h1>
