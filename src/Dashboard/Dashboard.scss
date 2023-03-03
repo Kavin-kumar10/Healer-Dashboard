@@ -14,10 +14,10 @@
     grid-template-columns: 300px 1fr 300px;
     grid-template-rows: 100px;
     grid-template-areas:
-        'sidebar header subBar'
-        'sidebar main subBar'
-        'sidebar main subBar'
-        'sidebar main subBar';
+        'sidebar header header'
+        'sidebar main main'
+        'sidebar main main'
+        'sidebar main main';
 }
 .Dashboard>*{
     margin: 20px;
@@ -40,9 +40,5 @@
 }
 .footer {
     grid-area: footer;
-    background-color:var(--primary-color);
-}
-.subBar{
-    grid-area: subBar;
     background-color:var(--primary-color);
 }

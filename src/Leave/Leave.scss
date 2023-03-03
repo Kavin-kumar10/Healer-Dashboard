@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .Leave{
     height: 100vh;
     width: 100vw;
@@ -25,9 +26,15 @@
                 width: 80%;
                 z-index: 1;
                 h2{
-                    color: var(--secondary-color);
+                    color: var(--primary-bright);
+                    opacity: 0.5;
                     margin: 12px;
                 }
+            }
+            .accordion-button{
+                background-color: var(--tertiary-color);
+                border: none;
+                color: var(--primary-bright);
             }
             .LeaveMain{
                 overflow-y: scroll;
@@ -35,6 +42,11 @@
                 padding:20px 0px;
                 z-index: 0;
                 .Acc{
+                    #Accord{
+                        margin: 40px 20px;
+                        background-color: var(--primary-color);
+                        color: var(--primary-bright);
+                    }
                     &__head{
                         display: flex;
                         align-items: center;

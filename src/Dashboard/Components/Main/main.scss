@@ -4,7 +4,7 @@
     flex-direction: column;
     .top{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
     .box{
         width: auto;
         margin: 12px;
@@ -61,5 +61,10 @@
             }
         }
     }
+    .Rep{
+        display: flex;
+        align-items: center;
+    }
     }
 }
+

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./DateAndTime.scss"
 
 const DateAndTime = () =>{
     const [data,setData] = useState('');

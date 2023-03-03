@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import { Doughnut } from 'react-chartjs-2';
 import {CiUser} from 'react-icons/ci'
 import {CiStethoscope} from 'react-icons/ci'
+import DateAndTime from "./DateAndTime";
 import 'chart.js/auto';
 
 
@@ -43,8 +44,6 @@ const MainTop = () =>{
                         <p>Staff's</p>
                     </div>
                 </div>
-                <div className="box Rep">
-                </div>
                 <div className="box Rev">
                     <div style={{height:"130px",width:"130px"}}>
                         <Doughnut data={chartData} options={options} style={{padding:"10px",height:"7px",width:"7px"}}/>
@@ -59,6 +58,12 @@ const MainTop = () =>{
                         <p>Doctors</p>
                         </div>
                     </div>
+                </div>
+                <div className="box">
+
+                </div>
+                <div className="box Rep">
+                    <DateAndTime/>
                 </div>
             </div>
     )

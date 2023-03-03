@@ -43,6 +43,8 @@ const MainBottom = () =>{
             <div className="right_BL">
                 <BoxMainBottom val="90" head="Out Patients" icon="Outpatients"/>
             </div>
+            <div className="right">
+            </div>
         </div>
     )
 }

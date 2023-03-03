@@ -21,7 +21,7 @@ const Leave = () =>{
                 Users.map((User,index)=>{
                     return(
                         <div className="Acc">
-                            <Accordion.Item eventKey="1" style={{margin:"40px 0px"}}>
+                            <Accordion.Item eventKey="1" id="Accord">
                             <Accordion.Header>
                                 <div className="Acc__head">
                                     <p>{User.name}</p>

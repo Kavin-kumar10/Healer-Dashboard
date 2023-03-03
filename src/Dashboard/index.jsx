@@ -3,7 +3,6 @@ import './Dashboard.scss';
 import Header from './Components/Header'
 import Sidebar from "../Sidebar";
 import Main from './Components/Main';
-import SubBar from "./Components/SubBar";
 import { ListContext } from "../ListContext";
 import Preloader from '../Preloader/index'
 
@@ -16,7 +15,6 @@ const Dashboard = () =>{
             <Header/>
             <Sidebar/>
             <Main/>
-            <SubBar/>
         </div>
     )
 }

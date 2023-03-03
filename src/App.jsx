@@ -5,6 +5,7 @@ import Leave from './Leave';
 import Departments from './Departments';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ListProvider } from './ListContext';
+import PageNotFound from './PageNotFound';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path='/Doctors' element={<Doctors/>} />
           <Route path='/Leave' element={<Leave/>} />
           <Route path='/Departments' element={<Departments/>} />
+          <Route path='*' element={<PageNotFound/>} />
         </Routes>
         </ListProvider>
       </div>

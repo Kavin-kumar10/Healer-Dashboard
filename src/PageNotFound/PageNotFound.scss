@@ -1,0 +1,89 @@
+.PageNotFound{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+
+    // background-color: var(--primary-bright);
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Poiret One', cursive;
+        h1{
+            font-size:350px;
+            color: var(--tertiary-color);
+    
+        }
+        p{
+            font-size: 50px;
+        }
+    }
+    .img{
+        img{
+            height: 500px;
+            width: 100%;
+        }
+    }
+}
+
+@media screen  and (max-width:1560px){
+    .PageNotFound{
+        .content{
+            h1{
+                font-size: 200px;
+            }
+            p{
+                font-size: 25px;
+            }
+        }
+        .img{
+            img{
+                height: 350px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen  and (max-width:1000px){
+    .PageNotFound{
+        flex-direction: column;
+        .content{
+            margin: 20px;
+            h1{
+                font-size: 150px;
+            }
+            p{
+                font-size: 25px;
+            }
+        }
+        .img{
+            img{
+                height: 320px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:700px) {
+    .PageNotFound{
+        justify-content: center;
+        .content{
+            h1{
+                font-size: 120px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        .img{
+            img{
+                height: 280px;
+            }
+        }
+    }
+}
