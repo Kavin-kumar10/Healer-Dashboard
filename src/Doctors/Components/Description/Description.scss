@@ -1,0 +1,20 @@
+.Description{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    .sidebar{
+        flex: 2;
+        background-color:var(--primary-color);
+        margin: 20px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px var(--secondary-color);
+        border-radius: 12px;
+    }
+    .Datas{
+        flex: 13;
+        margin: 20px;
+        border-radius: 12px;
+        padding: 12px;
+        box-shadow: 0px 0px 10px var(--secondary-color);
+    }
+}

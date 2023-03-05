@@ -37,7 +37,7 @@ const Maincat = () =>{
                         <div className="cat" key={index}>
                             <p>{cat.type}</p>
                             <div id="progress">
-                              <ProgressBar now={cat.val} style={{width:"200px"}} variant="MYVARIENT"/>
+                              <ProgressBar now={cat.val} style={{width:"300px",margin:"0px 30px"}} variant="MYVARIENT"/>
                             </div>
                         </div>
                       )
@@ -46,6 +46,19 @@ const Maincat = () =>{
                 </div>
             </div>
             <div className="chat">
+                  <div className="update">
+                      <p>Latest Updates</p>
+                  </div>
+                  <div className="broadcast">
+                    <p>BroadCast: </p>
+                    <div className="message">
+                      <form>
+                          <input placeholder="Message" type="text" />
+                          <button id="send">Send</button>
+                          <button id="reset" type="reset">Reset</button>
+                      </form>
+                    </div>
+                  </div>
             </div>
         </div>
     )

@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import './Preloader.scss';
 
 const Preloader = () =>{
-    const [message,setMessage] = useState('...Loading...');
+    const [message,setMessage] = useState('Loading...');
     setTimeout(()=>{
         setMessage('Taking longer than usual please check your internet connection');
     },6000);

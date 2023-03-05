@@ -2,6 +2,8 @@ import React,{useState} from "react";
 import { Line } from "react-chartjs-2";
 import './MainBottom.scss'
 import BoxMainBottom from "./BoxMainBottom";
+import Calender from "./Calender";
+
 
 const MainBottom = () =>{
     const [graph, setGraph] = useState({
@@ -44,6 +46,7 @@ const MainBottom = () =>{
                 <BoxMainBottom val="90" head="Out Patients" icon="Outpatients"/>
             </div>
             <div className="right">
+                <Calender/>
             </div>
         </div>
     )

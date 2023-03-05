@@ -3,6 +3,7 @@ import { Doughnut } from 'react-chartjs-2';
 import {CiUser} from 'react-icons/ci'
 import {CiStethoscope} from 'react-icons/ci'
 import DateAndTime from "./DateAndTime";
+import Number from "../../../../Number";
 import 'chart.js/auto';
 
 
@@ -31,7 +32,7 @@ const MainTop = () =>{
                         <CiUser/>
                     </div>
                     <div className="detail">
-                        <h1>400</h1>
+                        <h1><Number n = {400}/></h1>
                         <p>Patient's</p>
                     </div>
                 </div>
@@ -40,7 +41,7 @@ const MainTop = () =>{
                         <CiStethoscope/>
                     </div>
                     <div className="detail">
-                        <h1>300</h1>
+                        <h1><Number n = {300}/></h1>
                         <p>Staff's</p>
                     </div>
                 </div>
