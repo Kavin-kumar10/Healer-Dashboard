@@ -1,13 +1,13 @@
 .main{
     background-color: var(--tertiary-color);
-    height: 85vh;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    grid-template-rows: auto 1fr 1fr;
     .top{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     .box{
-        width: auto;
+        width:90%;
         margin: 12px;
         height: 150px;
         border-radius: 20px;
