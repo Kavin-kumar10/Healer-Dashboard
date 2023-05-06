@@ -13,7 +13,7 @@ const MainTop = () =>{
         datasets: [
           {
             data: [500, 300],
-            backgroundColor: ['rgb(49, 185, 190)', 'black', 'rgb(49, 185, 190)'],
+            backgroundColor: ['rgb(49, 185, 190)', 'rgb(131, 138, 151)', 'rgb(49, 185, 190)'],
             hoverBackgroundColor:['rgba(49, 185, 190,0.5)', 'white', 'rgba(49, 185, 190,0.5)'],
             tension: 0.1,
             fill:true
@@ -55,14 +55,14 @@ const MainTop = () =>{
                         <p>patients</p>
                         </div>
                         <div>
-                        <div className="dot" style={{background:"black"}}></div>
+                        <div className="dot" style={{background:"rgb(131, 138, 151)"}}></div>
                         <p>Doctors</p>
                         </div>
                     </div>
                 </div>
-                <div className="box">
+                {/* <div className="box">
 
-                </div>
+                </div> */}
                 <div className="box Rep">
                     <DateAndTime/>
                 </div>

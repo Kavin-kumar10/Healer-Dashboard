@@ -13,16 +13,16 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <ListProvider>
-        <Routes>
-          <Route path='/Healer-Dashboard' element={<Dashboard/>} />
-          <Route path='/Doctors' element={<Doctors/>} />
-          <Route path='/Leave' element={<Leave/>} />
-          <Route path='/Departments' element={<Departments/>} />
-          <Route path='/Doctors/:id' element={<Description/>} />
-          <Route path='*' element={<PageNotFound/>} />
-        </Routes>
-        </ListProvider>
+          <ListProvider>
+          <Routes>
+            <Route path='/Healer-Dashboard' element={<Dashboard/>} />
+            <Route path='/Doctors' element={<Doctors/>} />
+            <Route path='/Leave' element={<Leave/>} />
+            <Route path='/Departments' element={<Departments/>} />
+            <Route path='/Doctors/:id' element={<Description/>} />
+            <Route path='*' element={<PageNotFound/>} />
+          </Routes>
+          </ListProvider>
       </div>
     </Router>
   );

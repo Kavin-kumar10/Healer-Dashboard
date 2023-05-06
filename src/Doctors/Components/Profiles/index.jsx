@@ -15,7 +15,7 @@ const Profiles = ({User,index}) =>{
             <div className="desc">
                 <h2>{User.name}</h2>
                 <p>{User.dept}</p>
-                <div className="btn">
+                <div className="btnP">
                     <Link to={`./${User._id}`}>
                         <button id="Details" onClick={()=>console.log(User.name)}>Details</button>
                     </Link>

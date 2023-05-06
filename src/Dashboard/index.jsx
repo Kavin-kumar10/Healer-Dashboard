@@ -6,15 +6,18 @@ import Main from './Components/Main';
 import { ListContext } from "../ListContext";
 import Preloader from '../Preloader/index'
 
+
 const Dashboard = () =>{
     const [Users,setUsers,isLoading] = useContext(ListContext);
 
     return(
         (isLoading)?<Preloader/>:
         <div className="Dashboard">
+
             <Header/>
             <Sidebar/>
             <Main/>
+
         </div>
     )
 }

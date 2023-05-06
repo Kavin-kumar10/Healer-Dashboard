@@ -5,7 +5,6 @@ import { Link,useLocation } from "react-router-dom";
 import {BsSun,BsMoon} from 'react-icons/bs'
 import {CiMedicalCross,CiStethoscope,CiBoxList,CiSettings,CiClock2,CiGrid41,CiTimer} from 'react-icons/ci';
 import {BsGraphUp} from 'react-icons/bs'
-import { set } from "mongoose";
 
 const Sidebar = () =>{
     //Nav highlight process
@@ -74,12 +73,12 @@ const Sidebar = () =>{
                         <p>Departments</p>
                     </div>
                 </Link>
-                <Link style={{color:`var(--primary-bright)`,textDecoration:'none'}}>
+                {/* <Link style={{color:`var(--primary-bright)`,textDecoration:'none'}}>
                     <div className="cats" style={(currpath == '/History')?styleForCurr:{}}>
                         <CiClock2 id="icon"/>
                         <p>History</p>
                     </div>
-                </Link>
+                </Link> */}
             </div>
             <div className="modes">
                 <div className="mode" onClick={()=>{setLight(1)}}>
