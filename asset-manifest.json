@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Healer-Dashboard/static/css/main.d16e59dc.css",
+    "main.css": "/Healer-Dashboard/static/css/main.845326a1.css",
     "main.js": "/Healer-Dashboard/static/js/main.74507e81.js",
     "static/media/404.svg": "/Healer-Dashboard/static/media/404.20f37031f989663c03b0ca1bb062b276.svg",
     "index.html": "/Healer-Dashboard/index.html",
-    "main.d16e59dc.css.map": "/Healer-Dashboard/static/css/main.d16e59dc.css.map",
+    "main.845326a1.css.map": "/Healer-Dashboard/static/css/main.845326a1.css.map",
     "main.74507e81.js.map": "/Healer-Dashboard/static/js/main.74507e81.js.map"
   },
   "entrypoints": [
-    "static/css/main.d16e59dc.css",
+    "static/css/main.845326a1.css",
     "static/js/main.74507e81.js"
   ]
 }
