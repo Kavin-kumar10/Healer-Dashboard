@@ -12,7 +12,7 @@ export default function Calender() {
   
     return (
         <div className="Calender">
-        <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <LocalizationProvider dateAdapter={AdapterDayjs} >
             <DemoContainer components={['DateCalendar', 'DateCalendar']}>
                 <DateCalendar value={value} onChange={(newValue) => setValue(newValue)} />
             </DemoContainer>

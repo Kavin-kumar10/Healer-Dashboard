@@ -1,7 +1,8 @@
 .MainBottom{
     display: grid;
     max-height: 100%;
-    width: 100%;
+    width: clamp(50vw,80vw,90vw);
+    aspect-ratio: 50/11;
     grid-template-columns: 4fr 2.1fr 2.1fr 2.5fr;
     grid-template-rows: 50% 50%;
     grid-template-areas:

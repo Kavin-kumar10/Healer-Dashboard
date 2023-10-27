@@ -46,8 +46,8 @@ const MainTop = () =>{
                     </div>
                 </div>
                 <div className="box Rev">
-                    <div style={{height:"130px",width:"130px"}}>
-                        <Doughnut data={chartData} options={options} style={{padding:"10px",height:"7px",width:"7px"}}/>
+                    <div style={{aspectRatio:"1/1",width:"clamp(100px,7vw,15vw)"}}>
+                        <Doughnut data={chartData} options={options} style={{padding:"10px",height:"clamp(3px,5vw,5vw)",aspectRatio:"1/1"}}/>
                     </div>
                     <div className="desc">
                         <div>

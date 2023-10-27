@@ -37,7 +37,7 @@ const Maincat = () =>{
                         <div className="cat" key={index}>
                             <p>{cat.type}</p>
                             <div id="progress">
-                              <ProgressBar now={cat.val} style={{width:"300px",margin:"0px 30px"}} variant="MYVARIENT"/>
+                              <ProgressBar now={cat.val} style={{width:"clamp(150px,15vw,25vw)",height:"12px",margin:"0px 30px"}} variant="MYVARIENT"/>
                             </div>
                         </div>
                       )

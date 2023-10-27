@@ -9,7 +9,7 @@
         align-items: center;
         justify-content: space-evenly;
         height: 100%;
-        width: 100%;
+        width: clamp(100px,8vw,12vw);
     }
     .detail{
         display: flex;
@@ -24,11 +24,11 @@
         color: var(--tertiary-color-strong);
     }
     p{
-        font-size: 15px;
+        font-size: clamp(10px,1vw,1.2vw);
     }
     h1{
         // margin: 2px;
         opacity: 0.7;
-        font-size: 30px;
+        font-size: clamp(20px,1.5vw,2vw);
     }
 }

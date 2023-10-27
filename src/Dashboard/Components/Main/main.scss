@@ -7,14 +7,15 @@
 .main{
     background-color: var(--tertiary-color);
     display: grid;
-    height: 100%;
+    height: 95%;
     width: 100%;
     grid-template-rows: auto 1fr 1fr;
     .top{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     .box{
-        width:90%;
+        height: clamp(100px,7vw,10vw);
+        width:clamp(200px,90%,600px);
         margin: 12px;
         // height: 150px;
         border-radius: 20px;
@@ -23,13 +24,14 @@
         align-items: center;
         justify-content:space-around;
         box-shadow: 5px 10px 10px var(--secondary-color);
+        font-size: clamp(8px,1.2vw,2vw);
         .icon{
             font-size: 40px; 
             display: flex;
             align-items: center;
             justify-content: center;   
-            height: 75px;
-            width: 75px;
+            height: clamp(50px,5vw,6vw);
+            aspect-ratio: 1/1;
             border-radius: 100%;
             background: var(--tertiary-color);
         }
@@ -41,10 +43,12 @@
             h1{
                 margin: 0px;
                 opacity: 0.7;
+                font-size: clamp(10px,2vw,2vw);
             }
             p{
                 opacity: 0.5;
                 margin: 0px;
+                font-size: clamp(10px,1.3vw,2vw);
             }
         }
     }
